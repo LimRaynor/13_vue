@@ -8,7 +8,11 @@
 /* @ == src 폴더 (vite.config.js 확인) */
 import MyComp from '@/components/00_component/MyComponent.vue'
 import PropsParent from "@/components/01_props/PropsParent.vue";
+import DrillingParent from "@/components/02_props-drilling/DrillingParent.vue";
+import SlotParent from "@/components/03_slot/SlotParent.vue";
+import ScopedSlotParent from "@/components/04_scoped-slot/ScopedSlotParent.vue";
 </script>
+
 
 <template>
   <!--
@@ -24,10 +28,18 @@ import PropsParent from "@/components/01_props/PropsParent.vue";
   <main>
     <h3>01.props</h3>
     <PropsParent/>
+    <h3>02. Props Drilling & provide/inject </h3>
+    <DrillingParent/>
+
+<h3>03.slot</h3>
+  <SlotParent/> <!-- <&#45;&#45; 이거 왜닫는거-->
+
+  <h3>04. scoped slot</h3>
+  <ScopedSlotParent/>
   </main>
 
-
 </template>
+
 
 
 <style scoped>
